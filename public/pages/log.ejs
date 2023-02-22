@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/log.css">
+    <title>log</title>
+</head>
+
+<body>
+    <div class="content-form">
+        <div class="ongles">
+            <div class="btn active" data-onglet="0">
+                <p>Cree un compte</p>
+            </div>
+            <div class="btn" data-onglet="1">
+                <p>se connecter</p>
+            </div>
+        </div>
+        <div class="forms">
+            <form action="#" class="create">
+                <input type="text" name="name" id="name" placeholder="votre nom">
+                <input type="text" name="lastName" id="lastName" placeholder="Votre prenom">
+                <input type="email" name="email" id="email" placeholder="Votre adresse email">
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe">
+                <!-- <input type="password" name="password" id="password" placeholder="Confirmer votre de passe"> -->
+                <button type="submit" id="submit">Cree mon compte</button>
+            </form>
+            <form action="#" class="login">
+                <input type="email" name="email" id="email" placeholder="Votre adresse email">
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe">
+                <p class="p-link"><a href="#">Mot de passe oublier</a></p>
+                <button type="submit" id="submit">Cree mon compte</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/log.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 27, 85);
+}
+
+.content-form {
+  max-width: 400px;
+  width: 100%;
+  min-height: 450px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 2px rgba(36, 36, 36, 0.365);
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  gap: 10px;
+}
+.content-form .ongles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content-form .ongles > div {
+  position: relative;
+}
+.content-form .ongles > div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: royalblue;
+  left: 0;
+}
+.content-form .ongles > div.active {
+  background-color: rgba(65, 105, 225, 0.251);
+  color: #555;
+}
+.content-form .ongles > div.active::after {
+  width: 100%;
+}
+.content-form .ongles p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.content-form .forms {
+  position: relative;
+}
+.content-form .forms form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  transform: scale(0);
+  transition: 0.1s;
+}
+.content-form .forms form.active {
+  transform: scale(1);
+}
+.content-form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: solid 1px #aaa;
+}
+.content-form .p-link {
+  text-align: center;
+  margin-top: 20px;
+}
+.content-form .p-link a {
+  font-size: 13px;
+}
+.content-form button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: royalblue;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 4px 2px rgba(16, 16, 16, 0.235);
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=log.css.map */

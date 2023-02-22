@@ -4,7 +4,11 @@
   "description": "projet teste fireBase et node js express",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "sass-log": "sass --watch ./public/styles/sass/log.scss ./public/styles/css/log.css",
+    "sass-index": "sass --watch ./public/styles/sass/style.scss ./public/styles/css/style.css"
   },
   "author": "waly le dev",
   "license": "ISC",
